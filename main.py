@@ -1,8 +1,11 @@
-import requests
+class mahasiswa():
+    nama = 'Nama'
 
-url = 'https://detik.com'
-try:
-    req = requests.get(url)
-    print('OK !', req.status_code)
-except Exception as e:
-    print('Notice : ', e)
+otong = mahasiswa()
+ucup = mahasiswa()
+
+otong.nama = 'Otong'
+ucup.nama = 'Ucup'
+
+print(otong.nama)
+print(ucup.nama)
