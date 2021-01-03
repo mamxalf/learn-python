@@ -1,5 +1,8 @@
 import requests
 
-req = requests.get('https://google.com')
-status = req.status_code
-print(status)
+url = 'https://detik.com'
+try:
+    req = requests.get(url)
+    print('OK !', req.status_code)
+except Exception as e:
+    print('Notice : ', e)
